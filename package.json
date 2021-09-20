@@ -17,5 +17,8 @@
   "bugs": {
     "url": "https://github.com/junedu416/fx1-syd-hackathon-melodic/issues"
   },
-  "homepage": "https://github.com/junedu416/fx1-syd-hackathon-melodic#readme"
+  "homepage": "https://github.com/junedu416/fx1-syd-hackathon-melodic#readme",
+  "dependencies": {
+    "axios": "^0.21.4"
+  }
 }

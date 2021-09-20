@@ -24,14 +24,37 @@
 
 
     <script>
-        const searchBtn = document.getElementById("search-btn");
+        import axios from 'axios';
 
-        searchBtn.addEventListener("click", () => {
-            listUsers();
-            console.log("yes");
+        var options = {
+            method: 'GET',
+            url: 'https://genius.p.rapidapi.com/artists/16775/songs',
+            headers: {
+                'x-rapidapi-host': 'genius.p.rapidapi.com',
+                'x-rapidapi-key': 'ee685e6aadmshabc472a5750b606p1b5ea4jsn162990b75a3b'
+            }
+        };
+
+        axios.request(options).then(function (response) {
+            console.log(response.data);
+            displaySongs();
+        }).catch(function (error) {
+            console.error(error);
         });
-    </script>
 
+        function displaySongs(){
+            const ul = document.createElement("ul")
+            for (var i = 0; i < songs.length; i++){
+                var li1 = document.createElement("li");
+                li1.innerHTML += `Name:  ${songs[i].title}`
+                var li2 = document.createElement("li");
+                li2.innerHTML += `Musician:  ${songs[i].author}`
+                ul.appendChild(li1);
+                ul.appendChild(li2);
+            }
+            document.body.appendChild(ul);
+        }
+    </script>
     <script src="./index.js" type="module"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
 </body>

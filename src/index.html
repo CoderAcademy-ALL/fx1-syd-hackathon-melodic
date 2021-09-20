@@ -1,23 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="script.js"></script>
-    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+        <link rel="stylesheet" href="style.css"/>
+    <title>Melodic</title>
 </head>
+
 <body>
-    <form class="row-cols-lg-auto g-3 align-items-center">
-        <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search music ...">
-        <select class="form-select" id="inlineFormSelectPref">
-        <option selected>Choose...</option>
-        <option value="1">Artist</option>
-        <option value="2">Song</option>
-        <option value="3">Album</option>
-        </select>
-        <button type="submit" id="search-btn" class="btn btn-primary">Search</button>
-    </form>  
+    <div class="container">
+        <div class="h-100 p-5 text-white bg-dark border rounded-3">
+            <h1 class="display-4">MELODIC</h1>
+            <p class="lead">Hey! You're here to find the lyrics to that song, right?</p>
+            <hr class="my-4">
+            <p>Choose below to search by artist, songname or album:</p>
+            <form class="row-cols-lg-auto g-3 align-items-center">
+                <select class="form-select" id="inlineFormSelectPref">
+                    <option selected>Search by ...</option>
+                    <option value="1">Artist</option>
+                    <option value="2">Song</option>
+                    <option value="3">Album</option>
+                </select>
+                <br>
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Name ...">
+                <br>
+                <button type="submit" id="search-btn" class="btn btn-warning">Search</button>
+            </form>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ"
+        crossorigin="anonymous"></script>
 </body>
+
 </html>

@@ -28,18 +28,17 @@ var options = {
     }
 };
 
-const getData = () =>{
-    axios.request(options).then(function (res) {
-        let rawData = res.data.response.songs;
-        displaySongs(rawData)
-    }).catch(function (err) {
-        console.error(err);
-    });
-}
+
+let getData = axios.request(options).then(function (res) {
+            let rawData = res.data.response.songs;
+            displaySongs(rawData)
+        }).catch(function (err) {
+            console.error(err);
+        });
 
 
 const searchBtn = document.getElementById("search-btn");
-searchBtn.addEventListener("click", getData());
+searchBtn.addEventListener("click", getData);
 
 
 

@@ -2,7 +2,6 @@
 
 * {
     box-sizing: border-box;
-
 }
 
 body {
@@ -19,4 +18,5 @@ body {
 
 .container {
     width: 900px;
+    
 }

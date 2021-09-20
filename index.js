@@ -11,11 +11,11 @@ const listUsers = async () => {
     }
 };
 
-
 const searchBtn = document.getElementById("search-btn");
 
 searchBtn.addEventListener("click", () => {
     console.log("hello");
     listUsers();   
 });
+
 

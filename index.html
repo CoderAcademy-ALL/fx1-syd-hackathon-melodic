@@ -5,22 +5,41 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css" />
     <title>Melodic</title>
 </head>
 <body>
-    <div class="container">
-        <form class="row-cols-lg-auto g-3 align-items-center">
-            <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Search music ...">
-            <select class="form-select" id="inlineFormSelectPref">
-            <option selected>Choose...</option>
-            <option value="1">Musician</option>
-            <option value="2">Lyrics</option>
-            <option value="3">Album</option>
-            </select>
-            <button type="submit" id="search-btn" class="btn btn-primary">Search</button>
-        </form>
+    <div class="container active">
+        <div class="p-5 mb-4 text-white bg-dark border rounded-3">
+            <h1 class="display-4">MELODIC</h1>
+            <p class="lead">Hey! Are you here to find the lyrics to that song?</p>
+            <hr class="my-4">
+            <p>Choose to search by artist, song or album name below:</p>
+            <form class="row-cols-lg-auto g-3 align-items-center">
+                <select class="form-select" id="inlineFormSelectPref">
+                <option selected>Search by ...</option>
+                <option value="1">Artist</option>
+                <option value="2">Song</option>
+                <option value="3">Album</option>
+                </select>
+                <br>
+                <input type="text" class="form-control" placeholder="Name ...">
+                <br>
+                <button type="submit" class="btn btn-warning">Search</button>
+            </form>
+        </div>
     </div>
 
+    <div class="content">
+        <div class="row">
+          <div class="col-lg">
+          </div>
+          <div class="col-lg">
+          </div>
+          <div class="col-lg">
+          </div>
+        </div>
+      </div>
 
 
     <script>

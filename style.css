@@ -11,19 +11,36 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    overflow: hidden;
+    height: auto;
+    overflow-y: auto;
     margin: 0;
-}
-
-.container {
-    width: 800px;    
-}
-
-.container.active{
-    transform: ;
 }
 
 p {
     font-weight: 500;
+}
+
+.main-card {
+    width: 800px;
+    margin-top: 400px;
+    margin-bottom: 200px;
+}
+
+a {
+    color: cyan;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    color: rgb(119, 194, 194);
+}
+
+.card {
+    background-color: transparent;
+}
+
+.songs {
+    display: flex;
+    align-items: center;
 }

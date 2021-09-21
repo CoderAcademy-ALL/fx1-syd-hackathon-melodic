@@ -7,8 +7,8 @@ function displaySongs(data){
     for (var i = 0; i < data.length; i++){
         let div1 = document.createElement("div"),
              div2 = document.createElement("div");
-        div1.classList.add("col-lg");
-        div2 = document.createElement("card-body");
+        div1.classList.add("col-12", "col-sm-6", "mb-5", "card", "songs");
+        div2.classList.add("card-body");
         var thumbnail = document.createElement("img");
         thumbnail.src = data[i].result.header_image_thumbnail_url;
         thumbnail.style.height = '300px';

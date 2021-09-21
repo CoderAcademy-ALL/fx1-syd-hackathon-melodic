@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-/* @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@100;700&display=swap');
-=======
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@200;700&display=swap');
->>>>>>> b82aa3a75d4aead0134ad81befcf907d82ba47c6
 
 * {
     box-sizing: border-box;
@@ -24,11 +20,6 @@ body {
     width: 800px;    
 }
 
-<<<<<<< HEAD
-.content {
-    color: #fff;
-} */
-=======
 .container.active{
     transform: ;
 }
@@ -36,4 +27,3 @@ body {
 p {
     font-weight: 500;
 }
->>>>>>> b82aa3a75d4aead0134ad81befcf907d82ba47c6

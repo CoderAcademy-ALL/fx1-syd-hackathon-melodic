@@ -29,15 +29,14 @@ const searchBtn = document.getElementById("search-btn");
 
 form.addEventListener("submit", function(event){
     event.preventDefault();
-    var searchKeyword = document.getElementById("keyword").value;
-    console.log(searchKeyword)
-    
 });
+
+const searchKeyword = document.getElementById("keyword").value;
 
 var options = {
     method: 'GET',
     url: 'https://genius.p.rapidapi.com/search',
-    params: {q: `${searchKeyword}`},
+    params: {q: searchKeyword},
     headers: {
         'x-rapidapi-host': 'genius.p.rapidapi.com',
         'x-rapidapi-key': 'ee685e6aadmshabc472a5750b606p1b5ea4jsn162990b75a3b'

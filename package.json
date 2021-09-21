@@ -1,0 +1,20 @@
+{
+  "name": "fx1-syd-hackathon-melodic",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Disdroido/fx1-syd-hackathon-melodic.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Disdroido/fx1-syd-hackathon-melodic/issues"
+  },
+  "homepage": "https://github.com/Disdroido/fx1-syd-hackathon-melodic#readme"
+}
